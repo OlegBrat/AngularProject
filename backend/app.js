@@ -8,7 +8,7 @@ const postsRouter = require("./routes/posts");
 const usersRouter = require("./routes/user");
 mongoose
   .connect(
-    "mongodb+srv://oleg:JmZIOfNiN17uWdLu@MyDreamApp-uah5h.mongodb.net/test?retryWrites=true",
+    "mongodb+srv://oleg:"+process.env.PW+"@MyDreamApp-uah5h.mongodb.net/test?retryWrites=true",
     { useNewUrlParser: true }
   )
   .then(() => {
